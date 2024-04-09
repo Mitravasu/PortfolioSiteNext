@@ -30,7 +30,13 @@ export default function ExperienceCard(prop: ExperienceCardProps) {
       </div>
       <div className="bg-primary text-secondary rounded-lg">
         <div className=" bg-accent w-full rounded-t-lg p-4 text-primary">
-          <h1 className="text-2xl font-bold">{prop.experience.company}</h1>
+          <a
+            className="text-2xl font-bold hover:text-divider"
+            href={prop.experience.link}
+            target="_blank"
+          >
+            {prop.experience.company}
+          </a>
           <h2 className="text-xl font-bold">{prop.experience.role}</h2>
         </div>
         <div className="p-4 space-y-1">
