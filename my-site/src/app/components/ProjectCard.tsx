@@ -15,8 +15,13 @@ type ProjectCardProps = {
 };
 
 export default function ProjectCard(prop: ProjectCardProps) {
-  const list_tech = prop.project.tech.map((tech) => (
-    <li className="bg-accent text-primary p-2 rounded-lg">{tech}</li>
+  const list_tech = prop.project.tech.map((tech, index) => (
+    <li
+      key={"project_tech_" + index}
+      className="bg-accent text-primary p-2 rounded-lg"
+    >
+      {tech}
+    </li>
   ));
 
   const codeButton = prop.project.code ? (

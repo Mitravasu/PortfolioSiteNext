@@ -106,8 +106,8 @@ export default function Projects() {
     },
   ];
 
-  const projectCards = projects.map((project) => {
-    return <ProjectCard project={project} />;
+  const projectCards = projects.map((project, index) => {
+    return <ProjectCard key={"project" + index} project={project} />;
   });
 
   return (

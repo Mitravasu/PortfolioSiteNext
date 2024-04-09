@@ -15,12 +15,17 @@ type ExperienceCardProps = {
 };
 
 export default function ExperienceCard(prop: ExperienceCardProps) {
-  const list_descriptions = prop.experience.description.map((desc) => (
-    <li>{desc}</li>
+  const list_descriptions = prop.experience.description.map((desc, index) => (
+    <li key={"exp_desc_" + index}>{desc}</li>
   ));
 
-  const list_tech = prop.experience.tech.map((tech) => (
-    <li className="bg-accent text-primary p-2 rounded-lg">{tech}</li>
+  const list_tech = prop.experience.tech.map((tech, index) => (
+    <li
+      key={"exp_tech_" + index}
+      className="bg-accent text-primary p-2 rounded-lg"
+    >
+      {tech}
+    </li>
   ));
 
   return (

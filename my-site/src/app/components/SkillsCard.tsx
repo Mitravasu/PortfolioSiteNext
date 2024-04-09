@@ -8,8 +8,13 @@ type SkillsCardProps = {
 };
 
 export default function SkillsCard(prop: SkillsCardProps) {
-  const listSkills = prop.skill.skills.map((skill) => (
-    <li className="bg-accent text-primary p-2 rounded-lg">{skill}</li>
+  const listSkills = prop.skill.skills.map((skill, index) => (
+    <li
+      key={"skills_tech_" + index}
+      className="bg-accent text-primary p-2 rounded-lg"
+    >
+      {skill}
+    </li>
   ));
 
   return (

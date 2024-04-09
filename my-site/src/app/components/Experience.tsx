@@ -109,8 +109,8 @@ export default function Experience() {
     },
   ];
 
-  const experienceCards = experiences.map((experience) => {
-    return <ExperienceCard experience={experience} />;
+  const experienceCards = experiences.map((experience, index) => {
+    return <ExperienceCard key={"exp" + index} experience={experience} />;
   });
 
   return (

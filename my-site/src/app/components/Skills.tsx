@@ -63,8 +63,8 @@ export default function Skills() {
     },
   ];
 
-  const skillsCards = skillSet.map((skill) => {
-    return <SkillsCard skill={skill} />;
+  const skillsCards = skillSet.map((skill, index) => {
+    return <SkillsCard key={"skill_" + index} skill={skill} />;
   });
   return (
     <div className="h-full bg-secondary text-primary flex flex-col px-10 py-4">
