@@ -18,7 +18,7 @@ export default function ProjectCard(prop: ProjectCardProps) {
   const list_tech = prop.project.tech.map((tech, index) => (
     <li
       key={"project_tech_" + index}
-      className="bg-accent text-primary p-2 rounded-lg"
+      className="bg-accent text-white p-2 rounded-lg font-bold"
     >
       {tech}
     </li>
@@ -28,7 +28,7 @@ export default function ProjectCard(prop: ProjectCardProps) {
     <a
       href={prop.project.code}
       target="_blank"
-      className="border-2 border-accent p-3 rounded-lg hover:bg-accent hover:text-primary"
+      className="border-2 border-accent p-3 rounded-lg hover:bg-accent hover:text-primary font-bold"
     >
       Code
     </a>
@@ -38,7 +38,7 @@ export default function ProjectCard(prop: ProjectCardProps) {
     <a
       href={prop.project.demo}
       target="_blank"
-      className="border-2 border-accent p-3 rounded-lg hover:bg-accent hover:text-primary"
+      className="border-2 border-accent p-3 rounded-lg hover:bg-accent hover:text-primary font-bold"
     >
       Demo
     </a>
@@ -48,26 +48,26 @@ export default function ProjectCard(prop: ProjectCardProps) {
     <a
       href={prop.project.extralinks}
       target="_blank"
-      className="border-2 border-accent p-3 rounded-lg hover:bg-accent hover:text-primary"
+      className="border-2 border-accent p-3 rounded-lg hover:bg-accent hover:text-primary font-bold"
     >
       Read More
     </a>
   ) : null;
 
   return (
-    <div className="flex flex-col md:flex-row w-full bg-primary text-secondary rounded-lg space-y-3 md:space-y-0">
+    <div className="flex flex-col md:flex-row w-full text-black">
       <Image
         src={"/" + prop.project.image}
         alt="project"
         width={400}
         height={250}
-        className="rounded-t-lg md:rounded-tr-none md:rounded-l-lg"
+        className="h-full"
       />
       <div className="flex flex-col w-full">
-        <h1 className="text-2xl font-bold bg-accent w-full rounded-tr-lg p-4 text-primary">
+        <h1 className="text-2xl font-bold bg-accent w-full p-4 text-white">
           {prop.project.title}
         </h1>
-        <div className="p-4 space-y-2">
+        <div className="p-4 space-y-2 bg-primary h-full">
           <ul className="list-none flex flex-wrap gap-2">{list_tech}</ul>
           <p>{prop.project.description}</p>
           <div className="flex flex-wrap gap-2">

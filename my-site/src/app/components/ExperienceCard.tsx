@@ -22,7 +22,7 @@ export default function ExperienceCard(prop: ExperienceCardProps) {
   const list_tech = prop.experience.tech.map((tech, index) => (
     <li
       key={"exp_tech_" + index}
-      className="bg-accent text-primary p-2 rounded-lg"
+      className="bg-accent text-white p-2 rounded-lg  font-bold "
     >
       {tech}
     </li>
@@ -31,10 +31,10 @@ export default function ExperienceCard(prop: ExperienceCardProps) {
   return (
     <div>
       <div className="flex justify-start w-full">
-        <h1 className="text-xl italic">{prop.experience.dates}</h1>
+        <h1 className="text-xl italic font-bold">{prop.experience.dates}</h1>
       </div>
-      <div className="bg-primary text-secondary rounded-lg">
-        <div className=" bg-accent w-full rounded-t-lg p-4 text-primary">
+      <div className="text-black">
+        <div className="bg-accent w-full p-4 text-white">
           <a
             className="text-2xl font-bold hover:text-divider"
             href={prop.experience.link}
@@ -44,7 +44,7 @@ export default function ExperienceCard(prop: ExperienceCardProps) {
           </a>
           <h2 className="text-xl font-bold">{prop.experience.role}</h2>
         </div>
-        <div className="p-4 space-y-1">
+        <div className="p-4 bg-primary space-y-1">
           <ul className="list-none flex gap-2 flex-wrap">{list_tech}</ul>
           <ul className="list-disc px-4 text-lg">{list_descriptions}</ul>
         </div>

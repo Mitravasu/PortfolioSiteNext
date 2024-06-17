@@ -18,11 +18,13 @@ export default function SkillsCard(prop: SkillsCardProps) {
   ));
 
   return (
-    <div className="flex flex-col bg-primary text-secondary rounded-lg w-1/2">
-      <h1 className="text-2xl font-bold bg-accent rounded-t-lg p-4 text-primary">
+    <div className="flex flex-col text-secondary w-1/2">
+      <h1 className="text-2xl font-bold bg-accent p-4 text-white">
         {prop.skill.type}
       </h1>
-      <ul className="list-none flex flex-wrap gap-2 p-4">{listSkills}</ul>
+      <ul className="list-none bg-primary flex flex-wrap gap-2 p-4">
+        {listSkills}
+      </ul>
     </div>
   );
 }

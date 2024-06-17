@@ -3,7 +3,7 @@ import ExperienceCard from "./ExperienceCard";
 export default function Experience() {
   const experiences = [
     {
-      role: "Associate Software Engineer, Automation",
+      role: "Associate Software Engineer",
       company: "Basis Technologies",
       dates: "January 2024 - Present",
       link: "https://basis.net/",
@@ -20,11 +20,13 @@ export default function Experience() {
         "JavaScript",
       ],
       description: [
-        "Developed speed and coverage improvements to the automated testing frameworks and weekly test regressions to ensure high quality of the Basis Platform.",
+        "🤖 Automation Team",
+        "Developed and maintained automated test suites for the Basis Platform using Selenium, Java, and JUnit5, increasing bug detection by 20%.",
+        "Automated tests for critical features such as campaign pacing and tactics, reducing manual testing time by 30%",
       ],
     },
     {
-      role: "Software Engineer",
+      role: "Full-Stack Software Engineer",
       company: "University of Toronto Hatchery",
       dates: "September 2021 - December 2023",
       link: "https://hatchery.engineering.utoronto.ca/",
@@ -47,31 +49,33 @@ export default function Experience() {
       ],
     },
     {
-      role: "Software Engineer, Automation",
+      role: "Software Engineer Intern",
       company: "Basis Technologies",
       dates: "June 2023 - August 2023",
       link: "https://basis.net/",
       image: "basis.png",
       tech: ["Java", "Selenium", "Cucumber", "JUnit 5", "JIRA", "JavaScript"],
       description: [
+        "🤖 Automation Team",
         "Developed an alternative testing framework using JUnit5, Selenium, Java, OOP, and various Design Patterns, resulting in increased parallel test execution and reduced test execution times.",
         "Migrated over 50 test cases to the new framework by refactoring existing test cases to fit the new framework, leading to over 50% reduction in testing times.",
       ],
     },
     {
-      role: "Software Engineer, Platform",
+      role: "Software Engineer Intern",
       company: "Basis Technologies",
       dates: "June 2022 - August 2022",
       link: "https://basis.net/",
       image: "basis.png",
       tech: ["Java", "Redis", "JUnit", "SQL", "MongoDB", "Kafka", "Docker"],
       description: [
+        "⚙️ Demand Side Platform Team",
         "Implemented bid tracking in a mock environment by utilizing Redis in-memory database to track spends, resulting in the mock environment more accurately simulating real-time bidding.",
         "Developed a RESTful API for debugging client ad campaigns by connecting Kafka messages to Java backend, enabling developers to filter and access messages programmatically, significantly reducing debugging time.",
       ],
     },
     {
-      role: "Software Engineer",
+      role: "Full-Stack Software Engineer",
       company: "University Health Network",
       dates: "January 2021 - August 2021",
       link: "https://www.uhn.ca/",
@@ -114,7 +118,7 @@ export default function Experience() {
   });
 
   return (
-    <div className="h-full bg-secondary text-primary flex flex-col px-10 py-4">
+    <div className="h-full bg-secondary text-white flex flex-col px-10 py-4">
       <h1 className="text-4xl font-bold py-10">Experience</h1>
       <div className="flex flex-col space-y-6">{experienceCards}</div>
     </div>

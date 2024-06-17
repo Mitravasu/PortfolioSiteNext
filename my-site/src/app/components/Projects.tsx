@@ -3,6 +3,26 @@ import ProjectCard from "./ProjectCard";
 export default function Projects() {
   const projects = [
     {
+      title: "TalkLab",
+      description:
+        "A platform for students to practice and receive feedback on various communication skills with an AI partner.",
+      extralinks: "",
+      code: "",
+      demo: "",
+      image: "talklab.png",
+      tech: [
+        "React",
+        "Node.js",
+        "Express",
+        "Vite",
+        "Firebase",
+        "Firestore",
+        "LLMs",
+        "OpenAI",
+        "Web Sockets",
+      ],
+    },
+    {
       title:
         "Attitudes in replies of downvoted comments in Specialized and Generalized communities",
       description:
